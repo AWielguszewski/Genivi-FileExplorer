@@ -4,7 +4,7 @@
 
 #include "main.h"
 
-#define QML_EXAMPLE_SURFACE_ID 3
+#define QML_EXAMPLE_SURFACE_ID 40
 
 int main(int argc, char *argv[])
 {
