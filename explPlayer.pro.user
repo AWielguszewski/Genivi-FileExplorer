@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.0.3, 2016-08-19T12:31:55. -->
+<!-- Written by QtCreator 4.0.3, 2016-08-19T13:03:23. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -268,17 +268,22 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
        <value type="QString">/home/int-alwi/Downloads/Platform/moje/build-explPlayer-Rpi3-Debug/explPlayer</value>
+       <value type="QString">/home/int-alwi/Downloads/Platform/moje/build-explPlayer-Rpi3-Debug/explPlayer</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.60.51</value>
        <value type="QString">192.168.60.47</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/usr/bin</value>
+       <value type="QString">/usr/bin</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
        <value type="QString"></value>
+       <value type="QString"></value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2016-08-19T12:35:08</value>
        <value type="QDateTime">2016-08-11T15:17:18</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.IgnoreMissingFiles">false</value>

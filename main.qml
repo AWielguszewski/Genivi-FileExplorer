@@ -81,6 +81,17 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                 }
             }
+            MouseArea{
+                anchors.fill: wrapper
+                hoverEnabled: true
+                onClicked: {
+                    fileList.currentIndex = index
+                }
+                onDoubleClicked: {
+                    fileList.currentIndex = index
+                    enterFolder();
+                }
+            }
         }
     }
 
@@ -94,6 +105,23 @@ Rectangle {
         height: 750
         color: "#271e58"
         visible: true
+
+        Text {
+            id: returnFolderBtn
+            x: 14
+            y: 12
+            width: 35
+            height: 25
+            color: "#ffffff"
+            text: qsTr("<<")
+            font.pixelSize: 20
+            MouseArea{
+                anchors.fill: returnFolderBtn
+                onClicked: {
+                    returnFromFolder();
+                }
+            }
+        }
     }
 
 
@@ -207,18 +235,25 @@ Rectangle {
     Keys.onPressed: {
         if(event.key === Qt.Key_Enter){
             event.accepted = true;
-            if(fileModel.get(fileList.currentIndex,"fileIsDir")){
-                fileModel.folder = "file:" + fileModel.get(fileList.currentIndex,"filePath")
-            }
+            enterFolder();
         }
         if(event.key === Qt.Key_Backspace){
             event.accepted = true;
-            if(fileModel.parentFolder != "")
-                fileModel.folder = fileModel.parentFolder
+            returnFromFolder();
         }
     }
 
 
+    function enterFolder(){
+        if(fileModel.get(fileList.currentIndex,"fileIsDir")){
+            fileModel.folder = "file:" + fileModel.get(fileList.currentIndex,"filePath")
+        }
+    }
+
+    function returnFromFolder(){
+        if(fileModel.parentFolder != "")
+            fileModel.folder = fileModel.parentFolder
+    }
 
 
     Text {
