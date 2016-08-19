@@ -67,7 +67,7 @@ Rectangle {
             color: ListView.isCurrentItem ? "white" : "transparent"
             Image{
                 id: img
-                source: fileIsDir ? "file:/media/folder.png" : "file:/media/file.png"
+                source: fileIsDir ? "images/folder.png" : "images/file.png"
                 x: 3
                 y: -2
                 height: 30
